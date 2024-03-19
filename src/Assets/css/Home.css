@@ -1,21 +1,30 @@
-* {
-    margin: 0%;
-}
-.container {
-    display: flex; 
-    height: 100vh;
+.split {
+height: 100%;
+width: 50%;  
 }
 
-.left-side {
+.left {
+    left: 0;    
+}
+
+.left img {
+    height: 100vh;
     width: 100%;
 }
 
-.left-side img {
-    height: 100%;
-    width: 50%;
+.right {
+    right: 0;
+    display: flex;
+    justify-content: start;
+    height: 100vh;
+    margin-left: 15px;
 }
 
-.right-side {
-    display: flex;
-    justify-content: center;
+.centered {
+    align-self: center;
+}
+
+.right h2 {
+    margin-left: 5px;
+    color: red;
 }
