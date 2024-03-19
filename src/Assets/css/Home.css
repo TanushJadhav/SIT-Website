@@ -1,0 +1,21 @@
+* {
+    margin: 0%;
+}
+.container {
+    display: flex; 
+    height: 100vh;
+}
+
+.left-side {
+    width: 100%;
+}
+
+.left-side img {
+    height: 100%;
+    width: 50%;
+}
+
+.right-side {
+    display: flex;
+    justify-content: center;
+}
