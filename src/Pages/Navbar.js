@@ -1,32 +1,23 @@
 import React from "react";
-import logo from '../Assets/images/symbi_logo.png'
-import '../Assets/css/Navbar.css'
-import { useNavigate } from 'react-router-dom';
+import { Link } from "react-router-dom";
+
+import logo from "../Assets/images/symbi_logo.png";
+import "../Assets/css/Navbar.css";
 
 function Navbar() {
-
-  const navigate = useNavigate();
-
-  function nav_signup(event) {
-    navigate('/signup');
-  }
-
-  function nav_home(event) {
-    navigate('/');
-  }
-
-    return(
-        <div className="navbar">
-
-          <img src={logo} className="logo" alt="logo" />
-          <div className="navbar">
-              <ul>
-                  <a onClick={nav_home}>Home</a>
-                  <a onClick={nav_signup}>Signup</a>
-              </ul>
-          </div>
-        </div>
-    )
+  return (
+    <div className="navbar">
+      <img src={logo} className="logo" alt="logo" />
+      <ul>
+        <li>
+          <Link to={"/home"}>Home</Link>
+        </li>
+        <li>
+          <Link to={"/"}>Signup</Link>
+        </li>
+      </ul>
+    </div>
+  );
 }
 
 export default Navbar;

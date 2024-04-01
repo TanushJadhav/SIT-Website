@@ -1,31 +1,40 @@
 * {
     margin: 0%;
-}
-
-.navbar {
-    background-color: black;
-    height: 90px;
-    width: 100%;
-    display: flex;
+    box-sizing: border-box;
 }
 
 .logo {
     width: 200px;
-    height: 100px;
+    height: 80px;
 }
 
-.navbar ul {
-    margin-top: 35px;
-    margin-left: 70%;
-}
-
-.navbar a{
-    font-size: 18px;
+.navbar {
+    background-color: black;
     color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2px;
+    padding: 0 3rem;
+}
+
+.navbar ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.navbar ul li a{
     text-decoration: none;
-    margin-left: 30px;
+    color: inherit;
+    height: 100%;
+    padding: .50rem;
+    font-size: large;
 }
 
 .navbar a:hover{
     cursor: pointer;
+    color: rgb(150, 149, 149);
 }

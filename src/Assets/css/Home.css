@@ -15,7 +15,7 @@ width: 50%;
 .right {
     right: 0;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     height: 100vh;
     margin-left: 15px;
 }
@@ -26,5 +26,10 @@ width: 50%;
 
 .right h2 {
     margin-left: 5px;
+    margin-top: 15px;
     color: red;
+}
+
+.right ul {
+    list-style-type: square;
 }
